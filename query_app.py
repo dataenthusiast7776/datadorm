@@ -4,8 +4,7 @@ from collections import defaultdict
 import re
 
 # --- Load CDS data ---
-file_id = '1Me-BvUvnHwzrFEboJ-4dvmfu0SZZrnQp'
-CDS_PATH = f"https://drive.google.com/uc?export=download&id={file_id}"
+CDS_PATH = f"https://drive.google.com/file/d/1Me-BvUvnHwzrFEboJ-4dvmfu0SZZrnQp/view?usp=sharing"
 df = pd.read_csv(CDS_PATH)
 
 # Dictionary of trigger words (from previous step)
