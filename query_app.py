@@ -4,7 +4,7 @@ from collections import defaultdict
 import re
 
 # --- Load CDS data ---
-CDS_PATH = "https://raw.githubusercontent.com/dataenthusiast7776/datadorm/refs/heads/main/common_data_set_master.csv"
+CDS_PATH = r"C:\Users\vrajm\Downloads\College Admissions Parsers\common_data_set_master.csv"
 df = pd.read_csv(CDS_PATH)
 
 # Dictionary of trigger words (from previous step)
@@ -641,6 +641,38 @@ st.markdown(
     Our <strong>Query</strong> feature allows you to directly input a natural language search for college admission metrics across various colleges. Our <strong>Graph</strong> feature allows you to build your own graph to visualize relationships between metrics. 
     <br><br>
     We are constantly adding colleges to our database! If you find a college that is missing, do tell us by filling out <a href="#" style='color: #90CAF9;'>this</a> form.
+    </p>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="https://match-my-app.streamlit.app/" target="_blank" style="
+            display: inline-block;
+            font-size: 20px;
+            padding: 18px 36px;
+            background-color: #e53935;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease-in-out;
+        ">
+            🔗 Explore MatchMyApp
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <p style='text-align: center; color: white; font-size: 15px; margin-top: 20px;'>
+        Want to find past applicant profiles similar to you who got into top schools? 
     </p>
     """,
     unsafe_allow_html=True
