@@ -449,7 +449,7 @@ def format_value_for_display(column_name, value):
     if any(kw in column_name.lower() for kw in ["rate", "percentage", "percent"]):
         try:
             val = float(value)
-            if val <= 1:
+            if val <= 0.01:
                 val *= 100  # Convert from 0.XX to XX%
             return f"{val:.1f}%"
         except:
