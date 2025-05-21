@@ -4,7 +4,7 @@ from collections import defaultdict
 import re
 
 # --- Load CDS data ---
-CDS_PATH = f"https://drive.google.com/file/d/1Me-BvUvnHwzrFEboJ-4dvmfu0SZZrnQp/view?usp=sharing"
+CDS_PATH = "https://raw.githubusercontent.com/dataenthusiast7776/datadorm/refs/heads/main/common_data_set_master.csv"
 df = pd.read_csv(CDS_PATH)
 
 # Dictionary of trigger words (from previous step)
